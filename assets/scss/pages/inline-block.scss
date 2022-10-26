@@ -1,6 +1,6 @@
 .inline-block-wrapper {
   .header-container {
-    @include font-sizing;
+    @include font-styles;
     background-color: $color-1;
     height: 200px;
   }
@@ -11,26 +11,26 @@
   }
 
   .left-sidebar {
-    @include font-sizing;
+    @include font-styles;
     display: inline-block;
     width: 25%;
   }
 
   .main-content {
-    @include font-sizing;
+    @include font-styles;
     display: inline-block;
     width: 50%;
     height: 600px;
   }
 
   .right-sidebar {
-    @include font-sizing;
+    @include font-styles;
     display: inline-block;
     width: 25%;
   }
 
   .footer-container {
-    @include font-sizing;
+    @include font-styles;
     background-color: $color-5;
     height: 200px;
   }

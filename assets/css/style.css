@@ -2,9 +2,7 @@
   box-sizing: border-box;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #ffffff; }
+  -moz-osx-font-smoothing: grayscale; }
 
 body {
   margin: 0; }
@@ -14,8 +12,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .inline-block-wrapper .header-container {
   font-size: 20px;
-  line-height: 28px;
   font-weight: 700;
+  color: #ffffff;
+  text-align: center;
   background-color: #335C67;
   height: 200px; }
 
@@ -25,29 +24,33 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .inline-block-wrapper .left-sidebar {
   font-size: 20px;
-  line-height: 28px;
   font-weight: 700;
+  color: #ffffff;
+  text-align: center;
   display: inline-block;
   width: 25%; }
 
 .inline-block-wrapper .main-content {
   font-size: 20px;
-  line-height: 28px;
   font-weight: 700;
+  color: #ffffff;
+  text-align: center;
   display: inline-block;
   width: 50%;
   height: 600px; }
 
 .inline-block-wrapper .right-sidebar {
   font-size: 20px;
-  line-height: 28px;
   font-weight: 700;
+  color: #ffffff;
+  text-align: center;
   display: inline-block;
   width: 25%; }
 
 .inline-block-wrapper .footer-container {
   font-size: 20px;
-  line-height: 28px;
   font-weight: 700;
+  color: #ffffff;
+  text-align: center;
   background-color: #540B0E;
   height: 200px; }

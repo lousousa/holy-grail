@@ -3,8 +3,6 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #ffffff;
 }
 
 body {
@@ -21,10 +19,11 @@ $color-3: #E09F3E;
 $color-4: #9E2A2B;
 $color-5: #540B0E;
 
-@mixin font-sizing {
+@mixin font-styles {
   font-size: 20px;
-  line-height: 28px;
   font-weight: 700;
+  color: #ffffff;
+  text-align: center;
 }
 
 @import 'pages/inline-block';

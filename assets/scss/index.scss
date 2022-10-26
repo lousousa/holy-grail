@@ -1,3 +1,30 @@
 * {
   box-sizing: border-box;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #ffffff;
 }
+
+body {
+  margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+$color-1: #335C67;
+$color-2: #E56B6F;
+$color-3: #E09F3E;
+$color-4: #9E2A2B;
+$color-5: #540B0E;
+
+@mixin font-sizing {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+@import 'pages/inline-block';

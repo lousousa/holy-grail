@@ -1,0 +1,37 @@
+.inline-block-wrapper {
+  .header-container {
+    @include font-sizing;
+    background-color: $color-1;
+    height: 200px;
+  }
+
+  .content-wrapper {
+    font-size: 0;
+    background: linear-gradient(90deg, $color-2 0 25%, $color-3 25% 75%, $color-4 75% 100%);
+  }
+
+  .left-sidebar {
+    @include font-sizing;
+    display: inline-block;
+    width: 25%;
+  }
+
+  .main-content {
+    @include font-sizing;
+    display: inline-block;
+    width: 50%;
+    height: 600px;
+  }
+
+  .right-sidebar {
+    @include font-sizing;
+    display: inline-block;
+    width: 25%;
+  }
+
+  .footer-container {
+    @include font-sizing;
+    background-color: $color-5;
+    height: 200px;
+  }
+}

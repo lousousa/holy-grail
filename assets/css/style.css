@@ -55,7 +55,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #540B0E;
   height: 200px; }
 
-.flex-wrapper .header-container {
+.flexbox-wrapper .header-container {
   font-size: 20px;
   font-weight: 700;
   color: #ffffff;
@@ -66,11 +66,11 @@ p, h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   height: 200px; }
 
-.flex-wrapper .content-wrapper {
+.flexbox-wrapper .content-wrapper {
   display: flex;
   align-items: stretch; }
 
-.flex-wrapper .left-sidebar {
+.flexbox-wrapper .left-sidebar {
   font-size: 20px;
   font-weight: 700;
   color: #ffffff;
@@ -81,7 +81,7 @@ p, h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   flex: 1; }
 
-.flex-wrapper .main-content {
+.flexbox-wrapper .main-content {
   font-size: 20px;
   font-weight: 700;
   color: #ffffff;
@@ -93,7 +93,7 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 600px;
   flex: 2; }
 
-.flex-wrapper .right-sidebar {
+.flexbox-wrapper .right-sidebar {
   font-size: 20px;
   font-weight: 700;
   color: #ffffff;
@@ -104,7 +104,7 @@ p, h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   flex: 1; }
 
-.flex-wrapper .footer-container {
+.flexbox-wrapper .footer-container {
   font-size: 20px;
   font-weight: 700;
   color: #ffffff;
@@ -114,3 +114,45 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   height: 200px; }
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 200px auto 200px;
+  grid-template-areas: "header header header" "left-sidebar content right-sidebar" "footer footer footer"; }
+  .grid-wrapper .header-container {
+    grid-area: header;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    background-color: #335C67; }
+  .grid-wrapper .left-sidebar {
+    grid-area: left-sidebar;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    background-color: #E56B6F; }
+  .grid-wrapper .main-content {
+    grid-area: content;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    background-color: #E09F3E;
+    height: 600px; }
+  .grid-wrapper .right-sidebar {
+    grid-area: right-sidebar;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    background-color: #9E2A2B; }
+  .grid-wrapper .footer-container {
+    grid-area: footer;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    background-color: #540B0E; }

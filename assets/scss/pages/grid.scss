@@ -1,0 +1,40 @@
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 200px auto 200px;
+  grid-template-areas:
+    "header header header"
+    "left-sidebar content right-sidebar"
+    "footer footer footer";
+
+  .header-container {
+    grid-area: header;
+    @include font-styles;
+    background-color: $color-1;
+  }
+
+  .left-sidebar {
+    grid-area: left-sidebar;
+    @include font-styles;
+    background-color: $color-2;
+  }
+
+  .main-content {
+    grid-area: content;
+    @include font-styles;
+    background-color: $color-3;
+    height: 600px;
+  }
+
+  .right-sidebar {
+    grid-area: right-sidebar;
+    @include font-styles;
+    background-color: $color-4;
+  }
+
+  .footer-container {
+    grid-area: footer;
+    @include font-styles;
+    background-color: $color-5;
+  }
+}

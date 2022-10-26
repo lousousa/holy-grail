@@ -60,10 +60,10 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  background-color: #335C67;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #335C67;
   height: 200px; }
 
 .flexbox-wrapper .content-wrapper {
@@ -75,10 +75,10 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  background-color: #E56B6F;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #E56B6F;
   flex: 1; }
 
 .flexbox-wrapper .main-content {
@@ -86,10 +86,10 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  background-color: #E09F3E;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #E09F3E;
   height: 600px;
   flex: 2; }
 
@@ -98,10 +98,10 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  background-color: #9E2A2B;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #9E2A2B;
   flex: 1; }
 
 .flexbox-wrapper .footer-container {
@@ -109,50 +109,64 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  background-color: #540B0E;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #540B0E;
   height: 200px; }
 
 .grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 200px auto 200px;
-  grid-template-areas: "header header header" "left-sidebar content right-sidebar" "footer footer footer"; }
+  grid-template-rows: 200px auto 200px; }
   .grid-wrapper .header-container {
-    grid-area: header;
+    grid-column: span 3;
     font-size: 20px;
     font-weight: 700;
     color: #ffffff;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #335C67; }
   .grid-wrapper .left-sidebar {
-    grid-area: left-sidebar;
+    grid-column: 1 / 2;
     font-size: 20px;
     font-weight: 700;
     color: #ffffff;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #E56B6F; }
   .grid-wrapper .main-content {
-    grid-area: content;
+    grid-column: 2 / 3;
     font-size: 20px;
     font-weight: 700;
     color: #ffffff;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #E09F3E;
     height: 600px; }
   .grid-wrapper .right-sidebar {
-    grid-area: right-sidebar;
+    grid-column: 3 / -1;
     font-size: 20px;
     font-weight: 700;
     color: #ffffff;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #9E2A2B; }
   .grid-wrapper .footer-container {
-    grid-area: footer;
+    grid-column: span 3;
     font-size: 20px;
     font-weight: 700;
     color: #ffffff;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #540B0E; }

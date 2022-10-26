@@ -2,23 +2,27 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 200px auto 200px;
+  grid-template-areas:
+    "header header header"
+    "left-sidebar content right-sidebar"
+    "footer footer footer";
 
   .header-container {
-    grid-column: span 3;
+    grid-area: header;
     @include font-styles;
     @include center-content;
     background-color: $color-1;
   }
 
   .left-sidebar {
-    grid-column: 1 / 2;
+    grid-area: left-sidebar;
     @include font-styles;
     @include center-content;
     background-color: $color-2;
   }
 
   .main-content {
-    grid-column: 2 / 3;
+    grid-area: content;
     @include font-styles;
     @include center-content;
     background-color: $color-3;
@@ -26,14 +30,14 @@
   }
 
   .right-sidebar {
-    grid-column: 3 / -1;
+    grid-area: right-sidebar;
     @include font-styles;
     @include center-content;
     background-color: $color-4;
   }
 
   .footer-container {
-    grid-column: span 3;
+    grid-area: footer;
     @include font-styles;
     @include center-content;
     background-color: $color-5;

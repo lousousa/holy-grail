@@ -26,6 +26,12 @@ $color-5: #540B0E;
   text-align: center;
 }
 
+@mixin center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @import 'pages/inline-block';
 @import 'pages/flexbox';
 @import 'pages/grid';

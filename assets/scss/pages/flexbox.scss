@@ -1,10 +1,8 @@
 .flexbox-wrapper {
   .header-container {
     @include font-styles;
+    @include center-content;
     background-color: $color-1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 200px;
   }
 
@@ -15,38 +13,30 @@
 
   .left-sidebar {
     @include font-styles;
+    @include center-content;
     background-color: $color-2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex: 1;
   }
 
   .main-content {
     @include font-styles;
+    @include center-content;
     background-color: $color-3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 600px;
     flex: 2;
   }
 
   .right-sidebar {
     @include font-styles;
+    @include center-content;
     background-color: $color-4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex: 1;
   }
 
   .footer-container {
     @include font-styles;
+    @include center-content;
     background-color: $color-5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 200px;
   }
 }
